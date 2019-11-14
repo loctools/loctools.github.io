@@ -1,0 +1,282 @@
+body {
+    --blue0: #f2f6f7;
+    --blue1: #e6eef0;
+    --blue2: #dbf3f9;
+    --blue3: #ace8f7;
+    --blue-gray: #c6d7dc;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    margin: 0;
+
+    background: var(--blue0);
+    color: #000;
+}
+
+body > div > div {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 2em;
+    text-align: center;
+}
+
+p {
+    text-align: left;
+    font-size: 125%;
+    font-weight: 100;
+    line-height: 150%;
+    max-width: 40em;
+    margin: 1em auto;
+}
+
+#stripe-preheader {
+    background: var(--blue-gray);
+    height: 97px;
+}
+
+#logo {
+    position: relative;
+    display: inline-block;
+    width: 160px;
+    height: 160px;
+    background-image: url(loctools-logo.svg);
+    background-size: 160px 160px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#logo rect {
+    width: 100%;
+    height: 100%;
+    fill: var(--blue3);
+}
+
+#stripe-header {
+    background: #222;
+    color: #fff;
+    /*text-align: center;*/
+    padding: 110px 0 50px;
+    font-size: 22px;
+}
+
+h1 {
+    font-size: 180%;
+    font-weight: 100;
+}
+
+h2 {
+    font-size: 120%;
+    font-weight: 300;
+}
+
+#stripe-header h1 {
+    margin: 0;
+}
+
+.appdash {
+    background: #fff;
+    color: #000;
+}
+
+#stripe-continuous-localization .appgrid {
+    position: relative;
+    z-index: 1;
+}
+
+#stripe-need-help {
+    background: var(--blue3);
+}
+
+#stripe-need-help h2 {
+    font-style: italic;
+    margin: 0;
+    padding: 2em 0;
+}
+
+.appdash {
+    /*text-align: center;*/
+    padding: 3em 0;
+}
+
+.appdash h2 {
+    font-size: 200%;
+    font-weight: 300;
+    margin: 1em 0;
+}
+
+.appgrid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-bottom: 40px;
+}
+
+.appgrid.cols2 {
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+}
+
+.appgrid a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.app {
+    margin: 40px auto;
+    width: 150px;
+}
+
+.app.disabled h3,
+.app.disabled h4 {
+    color: var(--blue-gray);
+}
+
+.app h3 {
+    padding: 0.42em 0.4em 0.4em;
+    font-size: 125%;
+    font-weight: normal;
+    line-height: 1em;
+    border-radius: 1em;
+}
+
+.app h4 {
+    margin: 0;
+    line-height: 1em;
+    font-size: 100%;
+    line-height: 110%;
+    font-weight: normal;
+    opacity: 0.5;
+}
+
+.app.disabled h4 {
+    opacity: 1;
+}
+
+.app .icon {
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    background-color: var(--blue0);
+    font-size: 26px;
+    line-height: 150px;
+    background-size: 110px 110px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon.vcs {
+    background-image: url(vcs-icon.svg);
+}
+
+.icon.serge {
+    background-image: url(serge-icon.svg);
+}
+
+.icon.zing {
+    background-image: url(zing-icon.svg);
+}
+
+.icon.title {
+    background-image: url(title-icon.svg);
+}
+
+#stripe-continuous-localization .icon {
+    background-color: #fff;
+    background-size: 140px 140px;
+}
+
+#stripe-libraries .icon {
+    background: var(--blue2);
+}
+
+a:hover .app h3 {
+    background: #000;
+    color: #fff;
+}
+
+.appdash.darker {
+    background: var(--blue0);
+}
+
+.appdash.darker .icon {
+    background-color: #fff;
+}
+
+#sync-animation-container {
+    position: relative;
+    height: 0;
+}
+
+svg#sync-animation {
+    display: inline-block;
+    position: relative;
+    width: 500px;
+    max-width: 95%;
+    height: 15px;
+    top: 108px;
+}
+
+svg#sync-animation rect {
+    width: 100%;
+    height: 100%;
+    stroke: var(--blue-gray);
+    stroke-width: 6px;
+    fill: #fff;
+    stroke-dasharray: 25;
+    animation: dash 5s infinite linear forwards;
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 100;
+    }
+}
+
+#stripe-pre-footer svg {
+    width: 100%;
+    height: 100px;
+    fill: #fff;
+}
+
+#stripe-footer {
+    padding: 2em 0 4em;
+}
+
+#stripe-pre-footer,
+#stripe-footer {
+    background: var(--blue0);
+}
+
+a.button {
+    padding: 0.4em 1em;
+    margin: 0 0.5em;
+    border-radius: 1em;
+    text-decoration: none;
+}
+
+a.button.white {
+    background: #fff;
+    color: #000;
+}
+
+a.button.white:hover {
+    background: #000;
+    color: #fff;
+}
+
+.github-mark {
+    vertical-align: baseline;
+    position: relative;
+    top: 2px;
+    width: 20px;
+    height: 20px;
+    fill: #000;
+    margin-right: 0.2em;
+}
+
+a.button.white:hover .github-mark {
+    fill: #fff;
+}
